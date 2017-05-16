@@ -9,11 +9,28 @@
 /* Begin PBXBuildFile section */
 		B02FD4091EA6CF3E001A445B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4081EA6CF3E001A445B /* main.m */; };
 		B02FD40C1EA6CF3E001A445B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD40B1EA6CF3E001A445B /* AppDelegate.m */; };
-		B02FD40F1EA6CF3E001A445B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD40E1EA6CF3E001A445B /* ViewController.m */; };
 		B02FD4121EA6CF3E001A445B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02FD4101EA6CF3E001A445B /* Main.storyboard */; };
 		B02FD4151EA6CF3E001A445B /* WeatherTransit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4131EA6CF3E001A445B /* WeatherTransit.xcdatamodeld */; };
 		B02FD4171EA6CF3E001A445B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02FD4161EA6CF3E001A445B /* Assets.xcassets */; };
 		B02FD41A1EA6CF3E001A445B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02FD4181EA6CF3E001A445B /* LaunchScreen.storyboard */; };
+		B02FD4231EA6CF96001A445B /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4221EA6CF96001A445B /* FavoritesViewController.m */; };
+		B02FD4261EA6D07D001A445B /* BusTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4251EA6D07D001A445B /* BusTrackerViewController.m */; };
+		B02FD4291EA6D0EB001A445B /* BusName.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4281EA6D0EB001A445B /* BusName.m */; };
+		B02FD42C1EA6D149001A445B /* ECCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD42B1EA6D149001A445B /* ECCViewController.m */; };
+		B02FD42F1EA6D1A4001A445B /* CTAStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD42E1EA6D1A4001A445B /* CTAStatusViewController.m */; };
+		B02FD4341EA6D234001A445B /* TransitInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4331EA6D234001A445B /* TransitInfo.m */; };
+		B02FD4381EA6D2BA001A445B /* StatusListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4371EA6D2BA001A445B /* StatusListViewController.m */; };
+		B02FD43B1EA6D58C001A445B /* StatusList.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD43A1EA6D58C001A445B /* StatusList.m */; };
+		B02FD43E1EA6D5D5001A445B /* DisplayStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD43D1EA6D5D5001A445B /* DisplayStatusViewController.m */; };
+		B02FD4411EA6D617001A445B /* DisplayStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4401EA6D617001A445B /* DisplayStatus.m */; };
+		B02FD4441EA6D66A001A445B /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4431EA6D66A001A445B /* WeatherViewController.m */; };
+		B02FD4481EA6D758001A445B /* BusStopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4471EA6D758001A445B /* BusStopViewController.m */; };
+		B02FD44B1EA6D7BF001A445B /* BusStopService.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD44A1EA6D7BF001A445B /* BusStopService.m */; };
+		B02FD44E1EA6D862001A445B /* BusStops.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD44D1EA6D862001A445B /* BusStops.m */; };
+		B02FD4521EA6D8B5001A445B /* UpcomingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4511EA6D8B5001A445B /* UpcomingViewController.m */; };
+		B02FD4551EA6D918001A445B /* Upcoming.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4541EA6D918001A445B /* Upcoming.m */; };
+		B05BA0261EAE5747007A2715 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05BA0251EAE5747007A2715 /* CoreData.framework */; };
+		B05BA0281EAE5763007A2715 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05BA0271EAE5763007A2715 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +38,45 @@
 		B02FD4081EA6CF3E001A445B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B02FD40A1EA6CF3E001A445B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B02FD40B1EA6CF3E001A445B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B02FD40D1EA6CF3E001A445B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B02FD40E1EA6CF3E001A445B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B02FD4111EA6CF3E001A445B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B02FD4141EA6CF3E001A445B /* WeatherTransit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherTransit.xcdatamodel; sourceTree = "<group>"; };
 		B02FD4161EA6CF3E001A445B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B02FD4191EA6CF3E001A445B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B02FD41B1EA6CF3E001A445B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02FD4211EA6CF96001A445B /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		B02FD4221EA6CF96001A445B /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		B02FD4241EA6D07D001A445B /* BusTrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusTrackerViewController.h; sourceTree = "<group>"; };
+		B02FD4251EA6D07D001A445B /* BusTrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusTrackerViewController.m; sourceTree = "<group>"; };
+		B02FD4271EA6D0EB001A445B /* BusName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusName.h; sourceTree = "<group>"; };
+		B02FD4281EA6D0EB001A445B /* BusName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusName.m; sourceTree = "<group>"; };
+		B02FD42A1EA6D149001A445B /* ECCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECCViewController.h; sourceTree = "<group>"; };
+		B02FD42B1EA6D149001A445B /* ECCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECCViewController.m; sourceTree = "<group>"; };
+		B02FD42D1EA6D1A4001A445B /* CTAStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAStatusViewController.h; sourceTree = "<group>"; };
+		B02FD42E1EA6D1A4001A445B /* CTAStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAStatusViewController.m; sourceTree = "<group>"; };
+		B02FD4321EA6D234001A445B /* TransitInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitInfo.h; sourceTree = "<group>"; };
+		B02FD4331EA6D234001A445B /* TransitInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitInfo.m; sourceTree = "<group>"; };
+		B02FD4361EA6D2BA001A445B /* StatusListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusListViewController.h; sourceTree = "<group>"; };
+		B02FD4371EA6D2BA001A445B /* StatusListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusListViewController.m; sourceTree = "<group>"; };
+		B02FD4391EA6D58C001A445B /* StatusList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusList.h; sourceTree = "<group>"; };
+		B02FD43A1EA6D58C001A445B /* StatusList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusList.m; sourceTree = "<group>"; };
+		B02FD43C1EA6D5D5001A445B /* DisplayStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayStatusViewController.h; sourceTree = "<group>"; };
+		B02FD43D1EA6D5D5001A445B /* DisplayStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayStatusViewController.m; sourceTree = "<group>"; };
+		B02FD43F1EA6D617001A445B /* DisplayStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayStatus.h; sourceTree = "<group>"; };
+		B02FD4401EA6D617001A445B /* DisplayStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayStatus.m; sourceTree = "<group>"; };
+		B02FD4421EA6D66A001A445B /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		B02FD4431EA6D66A001A445B /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		B02FD4461EA6D758001A445B /* BusStopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopViewController.h; sourceTree = "<group>"; };
+		B02FD4471EA6D758001A445B /* BusStopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopViewController.m; sourceTree = "<group>"; };
+		B02FD4491EA6D7BF001A445B /* BusStopService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopService.h; sourceTree = "<group>"; };
+		B02FD44A1EA6D7BF001A445B /* BusStopService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopService.m; sourceTree = "<group>"; };
+		B02FD44C1EA6D862001A445B /* BusStops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStops.h; sourceTree = "<group>"; };
+		B02FD44D1EA6D862001A445B /* BusStops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStops.m; sourceTree = "<group>"; };
+		B02FD4501EA6D8B5001A445B /* UpcomingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingViewController.h; sourceTree = "<group>"; };
+		B02FD4511EA6D8B5001A445B /* UpcomingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingViewController.m; sourceTree = "<group>"; };
+		B02FD4531EA6D918001A445B /* Upcoming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Upcoming.h; sourceTree = "<group>"; };
+		B02FD4541EA6D918001A445B /* Upcoming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Upcoming.m; sourceTree = "<group>"; };
+		B05BA0251EAE5747007A2715 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B05BA0271EAE5763007A2715 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05BA0281EAE5763007A2715 /* WebKit.framework in Frameworks */,
+				B05BA0261EAE5747007A2715 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +97,7 @@
 			children = (
 				B02FD4061EA6CF3E001A445B /* WeatherTransit */,
 				B02FD4051EA6CF3E001A445B /* Products */,
+				B05BA0241EAE5747007A2715 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,14 +114,18 @@
 			children = (
 				B02FD40A1EA6CF3E001A445B /* AppDelegate.h */,
 				B02FD40B1EA6CF3E001A445B /* AppDelegate.m */,
-				B02FD40D1EA6CF3E001A445B /* ViewController.h */,
-				B02FD40E1EA6CF3E001A445B /* ViewController.m */,
 				B02FD4101EA6CF3E001A445B /* Main.storyboard */,
-				B02FD4161EA6CF3E001A445B /* Assets.xcassets */,
+				B02FD4301EA6D1F5001A445B /* Bus Route VC */,
+				B02FD4311EA6D204001A445B /* ECC VC */,
+				B02FD4351EA6D29B001A445B /* CTA Status VC */,
+				B02FD4451EA6D706001A445B /* Weather VC */,
+				B02FD4071EA6CF3E001A445B /* Supporting Files */,
+				B02FD44F1EA6D8A2001A445B /* Bus Stop VC */,
+				B02FD4561EA6DBFA001A445B /* Upcoming VC */,
 				B02FD4181EA6CF3E001A445B /* LaunchScreen.storyboard */,
+				B02FD4161EA6CF3E001A445B /* Assets.xcassets */,
 				B02FD41B1EA6CF3E001A445B /* Info.plist */,
 				B02FD4131EA6CF3E001A445B /* WeatherTransit.xcdatamodeld */,
-				B02FD4071EA6CF3E001A445B /* Supporting Files */,
 			);
 			path = WeatherTransit;
 			sourceTree = "<group>";
@@ -80,6 +136,89 @@
 				B02FD4081EA6CF3E001A445B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B02FD4301EA6D1F5001A445B /* Bus Route VC */ = {
+			isa = PBXGroup;
+			children = (
+				B02FD4211EA6CF96001A445B /* FavoritesViewController.h */,
+				B02FD4221EA6CF96001A445B /* FavoritesViewController.m */,
+				B02FD4241EA6D07D001A445B /* BusTrackerViewController.h */,
+				B02FD4251EA6D07D001A445B /* BusTrackerViewController.m */,
+				B02FD4271EA6D0EB001A445B /* BusName.h */,
+				B02FD4281EA6D0EB001A445B /* BusName.m */,
+			);
+			name = "Bus Route VC";
+			sourceTree = "<group>";
+		};
+		B02FD4311EA6D204001A445B /* ECC VC */ = {
+			isa = PBXGroup;
+			children = (
+				B02FD42A1EA6D149001A445B /* ECCViewController.h */,
+				B02FD42B1EA6D149001A445B /* ECCViewController.m */,
+			);
+			name = "ECC VC";
+			sourceTree = "<group>";
+		};
+		B02FD4351EA6D29B001A445B /* CTA Status VC */ = {
+			isa = PBXGroup;
+			children = (
+				B02FD42D1EA6D1A4001A445B /* CTAStatusViewController.h */,
+				B02FD42E1EA6D1A4001A445B /* CTAStatusViewController.m */,
+				B02FD4321EA6D234001A445B /* TransitInfo.h */,
+				B02FD4331EA6D234001A445B /* TransitInfo.m */,
+				B02FD4361EA6D2BA001A445B /* StatusListViewController.h */,
+				B02FD4371EA6D2BA001A445B /* StatusListViewController.m */,
+				B02FD4391EA6D58C001A445B /* StatusList.h */,
+				B02FD43A1EA6D58C001A445B /* StatusList.m */,
+				B02FD43C1EA6D5D5001A445B /* DisplayStatusViewController.h */,
+				B02FD43D1EA6D5D5001A445B /* DisplayStatusViewController.m */,
+				B02FD43F1EA6D617001A445B /* DisplayStatus.h */,
+				B02FD4401EA6D617001A445B /* DisplayStatus.m */,
+			);
+			name = "CTA Status VC";
+			sourceTree = "<group>";
+		};
+		B02FD4451EA6D706001A445B /* Weather VC */ = {
+			isa = PBXGroup;
+			children = (
+				B02FD4421EA6D66A001A445B /* WeatherViewController.h */,
+				B02FD4431EA6D66A001A445B /* WeatherViewController.m */,
+			);
+			name = "Weather VC";
+			sourceTree = "<group>";
+		};
+		B02FD44F1EA6D8A2001A445B /* Bus Stop VC */ = {
+			isa = PBXGroup;
+			children = (
+				B02FD4461EA6D758001A445B /* BusStopViewController.h */,
+				B02FD4471EA6D758001A445B /* BusStopViewController.m */,
+				B02FD4491EA6D7BF001A445B /* BusStopService.h */,
+				B02FD44A1EA6D7BF001A445B /* BusStopService.m */,
+				B02FD44C1EA6D862001A445B /* BusStops.h */,
+				B02FD44D1EA6D862001A445B /* BusStops.m */,
+			);
+			name = "Bus Stop VC";
+			sourceTree = "<group>";
+		};
+		B02FD4561EA6DBFA001A445B /* Upcoming VC */ = {
+			isa = PBXGroup;
+			children = (
+				B02FD4501EA6D8B5001A445B /* UpcomingViewController.h */,
+				B02FD4511EA6D8B5001A445B /* UpcomingViewController.m */,
+				B02FD4531EA6D918001A445B /* Upcoming.h */,
+				B02FD4541EA6D918001A445B /* Upcoming.m */,
+			);
+			name = "Upcoming VC";
+			sourceTree = "<group>";
+		};
+		B05BA0241EAE5747007A2715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B05BA0271EAE5763007A2715 /* WebKit.framework */,
+				B05BA0251EAE5747007A2715 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +293,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02FD43B1EA6D58C001A445B /* StatusList.m in Sources */,
+				B02FD4551EA6D918001A445B /* Upcoming.m in Sources */,
 				B02FD4151EA6CF3E001A445B /* WeatherTransit.xcdatamodeld in Sources */,
-				B02FD40F1EA6CF3E001A445B /* ViewController.m in Sources */,
 				B02FD40C1EA6CF3E001A445B /* AppDelegate.m in Sources */,
+				B02FD4231EA6CF96001A445B /* FavoritesViewController.m in Sources */,
+				B02FD4521EA6D8B5001A445B /* UpcomingViewController.m in Sources */,
+				B02FD4291EA6D0EB001A445B /* BusName.m in Sources */,
+				B02FD4261EA6D07D001A445B /* BusTrackerViewController.m in Sources */,
+				B02FD42C1EA6D149001A445B /* ECCViewController.m in Sources */,
+				B02FD4381EA6D2BA001A445B /* StatusListViewController.m in Sources */,
 				B02FD4091EA6CF3E001A445B /* main.m in Sources */,
+				B02FD4441EA6D66A001A445B /* WeatherViewController.m in Sources */,
+				B02FD43E1EA6D5D5001A445B /* DisplayStatusViewController.m in Sources */,
+				B02FD44E1EA6D862001A445B /* BusStops.m in Sources */,
+				B02FD4481EA6D758001A445B /* BusStopViewController.m in Sources */,
+				B02FD44B1EA6D7BF001A445B /* BusStopService.m in Sources */,
+				B02FD4411EA6D617001A445B /* DisplayStatus.m in Sources */,
+				B02FD42F1EA6D1A4001A445B /* CTAStatusViewController.m in Sources */,
+				B02FD4341EA6D234001A445B /* TransitInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +468,7 @@
 				B02FD4201EA6CF3E001A445B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
