@@ -10,18 +10,14 @@
 #import "BusTrackerViewController.h"
 #import "AppDelegate.h"
 #import "BusStopViewController.h"
-
-//#import <CoreData/NSEntityDescription.h>
-//#import <CoreData/NSManagedObject.h>
-//#import <CoreData/NSManagedObjectContext.h>
-//#import <CoreData/NSFetchRequest.h>
+#import "FavoritedBus+CoreDataProperties.h"
 
 @interface FavoritesViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) NSMutableArray *favorited;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property NSManagedObjectContext *moc;
-@property NSArray *favorites;
+//@property NSArray *favorites;
 
 @end
 
@@ -35,24 +31,19 @@
 
     self.favorited = [NSMutableArray new];
     [self load];
-    [BusName retrieveBusWithCompletion:^(NSMutableArray *busList){
-        self.favorited = busList;
-        [self populateBusListIfEmpty];
-    }];
-    self.favorites = self.favorited;
 }
 
--(void)populateBusListIfEmpty {
-    if (self.favorited.count <=0) {
-        for (BusName *favoritedBusName in self.busName) {
-            NSManagedObject *busList = [NSEntityDescription insertNewObjectForEntityForName:@"BusName" inManagedObjectContext:self.moc];
-            [busList setValue:favoritedBusName.route forKey:@"route"];
-            [busList setValue:favoritedBusName.routeName forKey:@"routeName"];
-            [self.moc save:nil];
-            [self load];
-        }
-    }
-}
+//-(void)populateBusListIfEmpty {
+//    if (self.favorited.count <=0) {
+//        for (BusName *favoritedBusName in self.busName) {
+//            NSManagedObject *busList = [NSEntityDescription insertNewObjectForEntityForName:@"FavoritedBus" inManagedObjectContext:self.moc];
+//            [busList setValue:favoritedBusName.route forKey:@"route"];
+//            [busList setValue:favoritedBusName.routeName forKey:@"routeName"];
+//            [self.moc save:nil];
+//            [self load];
+//        }
+//    }
+//}
 
 -(void)showBusList:(NSMutableArray *)bus{
     bus = bus;
@@ -68,11 +59,21 @@
     [self presentViewController:busListVC animated:YES completion:nil];
 }
 
+#pragma mark - loading busses
 -(void)load{
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"route" ascending:NO];
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"routeName"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"FavoritedBus"];
     request.sortDescriptors = @[sortDescriptor];
-    self.favorites = [self.moc executeFetchRequest:request error:nil];
+    NSArray *favorites;
+    favorites = [self.moc executeFetchRequest:request error:nil];
+
+    for (FavoritedBus *favoritedBus in favorites) {
+        BusName *busName = [BusName new];
+        busName.route = favoritedBus.route;
+        busName.routeName = favoritedBus.routeName;
+        // ...
+        [self.favorited addObject:busName];
+    }
 }
 
 #pragma mark - UITableViewDataSource and UITableViewDelegate
@@ -89,6 +90,10 @@
 }
 
 -(void)busTrackerViewController:(BusTrackerViewController *)viewController didChooseValue:(BusName *)value{
+    NSManagedObject *storeBus = [NSEntityDescription insertNewObjectForEntityForName:@"FavoritedBus" inManagedObjectContext:self.moc];
+    [storeBus setValue:value.route forKey:@"route"];
+    [storeBus setValue:value.routeName forKey:@"routeName"];
+    [self.moc save:nil];
     [self.favorited addObject:value];
     [self.tableView reloadData];
 }

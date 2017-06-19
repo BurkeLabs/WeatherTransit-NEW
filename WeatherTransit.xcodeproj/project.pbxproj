@@ -29,6 +29,7 @@
 		B02FD44E1EA6D862001A445B /* BusStops.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD44D1EA6D862001A445B /* BusStops.m */; };
 		B02FD4521EA6D8B5001A445B /* UpcomingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4511EA6D8B5001A445B /* UpcomingViewController.m */; };
 		B02FD4551EA6D918001A445B /* Upcoming.m in Sources */ = {isa = PBXBuildFile; fileRef = B02FD4541EA6D918001A445B /* Upcoming.m */; };
+		B049A3B91EDC828C001C0FD1 /* FavoritedBus+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B049A3B71EDC828C001C0FD1 /* FavoritedBus+CoreDataProperties.m */; };
 		B05BA0261EAE5747007A2715 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05BA0251EAE5747007A2715 /* CoreData.framework */; };
 		B05BA0281EAE5763007A2715 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05BA0271EAE5763007A2715 /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,8 @@
 		B02FD4511EA6D8B5001A445B /* UpcomingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingViewController.m; sourceTree = "<group>"; };
 		B02FD4531EA6D918001A445B /* Upcoming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Upcoming.h; sourceTree = "<group>"; };
 		B02FD4541EA6D918001A445B /* Upcoming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Upcoming.m; sourceTree = "<group>"; };
+		B049A3B61EDC828C001C0FD1 /* FavoritedBus+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FavoritedBus+CoreDataProperties.h"; path = "../FavoritedBus+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B049A3B71EDC828C001C0FD1 /* FavoritedBus+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FavoritedBus+CoreDataProperties.m"; path = "../FavoritedBus+CoreDataProperties.m"; sourceTree = "<group>"; };
 		B05BA0251EAE5747007A2715 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B05BA0271EAE5763007A2715 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -116,11 +119,11 @@
 				B02FD40B1EA6CF3E001A445B /* AppDelegate.m */,
 				B02FD4101EA6CF3E001A445B /* Main.storyboard */,
 				B02FD4301EA6D1F5001A445B /* Bus Route VC */,
+				B02FD44F1EA6D8A2001A445B /* Bus Stop VC */,
 				B02FD4311EA6D204001A445B /* ECC VC */,
 				B02FD4351EA6D29B001A445B /* CTA Status VC */,
 				B02FD4451EA6D706001A445B /* Weather VC */,
 				B02FD4071EA6CF3E001A445B /* Supporting Files */,
-				B02FD44F1EA6D8A2001A445B /* Bus Stop VC */,
 				B02FD4561EA6DBFA001A445B /* Upcoming VC */,
 				B02FD4181EA6CF3E001A445B /* LaunchScreen.storyboard */,
 				B02FD4161EA6CF3E001A445B /* Assets.xcassets */,
@@ -147,6 +150,8 @@
 				B02FD4251EA6D07D001A445B /* BusTrackerViewController.m */,
 				B02FD4271EA6D0EB001A445B /* BusName.h */,
 				B02FD4281EA6D0EB001A445B /* BusName.m */,
+				B049A3B61EDC828C001C0FD1 /* FavoritedBus+CoreDataProperties.h */,
+				B049A3B71EDC828C001C0FD1 /* FavoritedBus+CoreDataProperties.m */,
 			);
 			name = "Bus Route VC";
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B049A3B91EDC828C001C0FD1 /* FavoritedBus+CoreDataProperties.m in Sources */,
 				B02FD43B1EA6D58C001A445B /* StatusList.m in Sources */,
 				B02FD4551EA6D918001A445B /* Upcoming.m in Sources */,
 				B02FD4151EA6CF3E001A445B /* WeatherTransit.xcdatamodeld in Sources */,
@@ -431,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FQ39X97X3K;
 				INFOPLIST_FILE = WeatherTransit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BurkeLabs.WeatherTransit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FQ39X97X3K;
 				INFOPLIST_FILE = WeatherTransit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BurkeLabs.WeatherTransit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

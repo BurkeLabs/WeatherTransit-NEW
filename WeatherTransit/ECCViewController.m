@@ -26,8 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.spinner.hidesWhenStopped = YES;
     [self openURL:@"http://www.emergencyclosingcenter.com"];
+    self.spinner.hidesWhenStopped = YES;
+
 }
 
 -(void)openURL:(NSString *)string
@@ -36,6 +37,14 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
     [self.webView.scrollView setDelegate:self];
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    [self.spinner startAnimating];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [self.spinner stopAnimating];
 }
 
 @end

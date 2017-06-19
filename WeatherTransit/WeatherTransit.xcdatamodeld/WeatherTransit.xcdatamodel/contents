@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <entity name="BusName" representedClassName="BusName" syncable="YES" codeGenerationType="class">
+    <entity name="FavoritedBus" representedClassName="FavoritedBus" syncable="YES" codeGenerationType="class">
+        <attribute name="direction" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="route" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="routeName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="BusName" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="FavoritedBus" positionX="-54" positionY="-9" width="128" height="90"/>
     </elements>
 </model>

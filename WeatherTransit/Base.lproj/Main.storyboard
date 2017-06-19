@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j2t-bT-KQs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j2t-bT-KQs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys0-bG-A1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="-152"/>
+            <point key="canvasLocation" x="284" y="609"/>
         </scene>
         <!--Bus Stop-->
         <scene sceneID="K4G-BA-WOe">
@@ -219,7 +219,7 @@
             </objects>
             <point key="canvasLocation" x="932" y="-152"/>
         </scene>
-        <!--Status List View Controller-->
+        <!--Status List-->
         <scene sceneID="Vmf-VR-6CI">
             <objects>
                 <viewController id="9TK-E4-bFK" customClass="StatusListViewController" sceneMemberID="viewController">
@@ -272,7 +272,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pFW-W6-cT0"/>
+                    <navigationItem key="navigationItem" title="Status List" id="pFW-W6-cT0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoy-1e-eDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -400,6 +400,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="CTA Status" id="btR-Ca-IhO"/>
+                    <connections>
+                        <outlet property="tableView" destination="nXS-JA-Pm6" id="w6e-o6-mbT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU6-JM-jZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -567,7 +570,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w71-96-8KS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-576.79999999999995" y="-152.47376311844079"/>
+            <point key="canvasLocation" x="-333" y="-153"/>
         </scene>
     </scenes>
     <resources>
