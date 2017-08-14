@@ -44,11 +44,9 @@
 }
 
 #pragma mark - Core Data stack
-
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentContainer = _persistentContainer;
-
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 -(NSURL *)applicationDocumentsDirectory{
@@ -90,7 +88,6 @@
             }];
         }
     }
-    
     return _persistentContainer;
 }
 
